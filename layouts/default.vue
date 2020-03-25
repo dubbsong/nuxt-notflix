@@ -25,6 +25,7 @@ export default {
 <style lang="scss">
 #app {
   #main {
+    background-color: #141414;
     margin-top: 80px;
   }
 }
