@@ -45,13 +45,23 @@
         </nuxt-link>
       </li>
       <li>
-        <a>
+        <a @click="toggleAsideRight">
           <b-icon icon="bell" />
         </a>
       </li>
     </ul>
   </header>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleAsideRight() {
+      console.log('Toggle AsideRight')
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 header {
