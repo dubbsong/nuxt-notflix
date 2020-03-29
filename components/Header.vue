@@ -40,6 +40,9 @@
     <!-- Right -->
     <ul class="right">
       <li>
+        <p>Is Auth: {{ isAuthenticated }}</p>
+      </li>
+      <li>
         <nuxt-link to="/login">
           <b-icon icon="login-variant" />
         </nuxt-link>
@@ -55,6 +58,11 @@
 
 <script>
 export default {
+  computed: {
+    isAuthenticated() {
+      return this.$store.getters.isAuthenticated
+    }
+  },
   methods: {
     toggleAsideRight() {
       console.log('Toggle AsideRight')
