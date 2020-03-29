@@ -40,9 +40,6 @@
     <!-- Right -->
     <ul class="right">
       <li>
-        <img src="~/assets/img/omb.png" alt="omb" width="16" />
-      </li>
-      <li>
         <nuxt-link to="/login">
           <b-icon icon="login-variant" />
         </nuxt-link>

@@ -2,7 +2,9 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
 
-  .title {
-    color: #e5e5e5;
+  .title,
+  .subtitle {
+    color: #fff;
+    font-weight: bold;
   }
 }
