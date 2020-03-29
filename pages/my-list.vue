@@ -1,8 +1,8 @@
 <template>
-  <div id="home">
+  <div id="my-list">
     <section class="section">
       <div class="container">
-        <p class="title">Home</p>
+        <p class="title">My List</p>
       </div>
     </section>
   </div>

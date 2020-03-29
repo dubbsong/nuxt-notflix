@@ -1,8 +1,8 @@
 <template>
-  <div id="home">
+  <div id="movies">
     <section class="section">
       <div class="container">
-        <p class="title">Home</p>
+        <p class="title">Movies</p>
       </div>
     </section>
   </div>

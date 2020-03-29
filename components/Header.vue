@@ -9,19 +9,29 @@
       </li>
       <li>
         <nuxt-link to="/">
-          <b-icon icon="movie" size="is-small" />
+          Home
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/movies">
+          <!-- <b-icon icon="movie" size="is-small" /> -->
           Movies
         </nuxt-link>
       </li>
       <li>
         <nuxt-link to="/tv">
-          <b-icon icon="movie-roll" size="is-small" />
+          <!-- <b-icon icon="movie-roll" size="is-small" /> -->
           TV Shows
         </nuxt-link>
       </li>
       <li>
+        <nuxt-link to="/my-list">
+          My List
+        </nuxt-link>
+      </li>
+      <li>
         <nuxt-link to="/test">
-          <b-icon icon="flask-outline" size="is-small" />
+          <!-- <b-icon icon="flask-outline" size="is-small" /> -->
           Test
         </nuxt-link>
       </li>
@@ -34,12 +44,12 @@
       </li>
       <li>
         <nuxt-link to="/login">
-          <b-icon icon="login" size="is-small" />
+          <b-icon icon="login-variant" />
         </nuxt-link>
       </li>
       <li>
         <a>
-          <b-icon icon="bell" size="is-small" />
+          <b-icon icon="bell" />
         </a>
       </li>
     </ul>
@@ -48,13 +58,13 @@
 
 <style lang="scss" scoped>
 header {
-  background-color: rgb(20, 20, 20);
+  background-color: #141414;
   color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 68px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +82,8 @@ header {
       margin-right: 24px;
 
       a {
-        // font-size: 14px;
+        font-size: 14px;
+        font-weight: bold;
         color: #e5e5e5;
         display: flex;
         align-items: center;
@@ -102,6 +113,8 @@ header {
       margin-left: 16px;
 
       a {
+        font-size: 14px;
+        font-weight: bold;
         color: #e5e5e5;
       }
     }
