@@ -7,6 +7,11 @@
       </p>
     </div>
 
+    <!-- Center -->
+    <div class="center">
+      <p>Is Auth: {{ isAuthenticated }}</p>
+    </div>
+
     <!-- Right -->
     <ul class="right">
       <li>
@@ -27,6 +32,16 @@
     </ul>
   </footer>
 </template>
+
+<script>
+export default {
+  computed: {
+    isAuthenticated() {
+      return this.$store.getters.isAuthenticated
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 footer {

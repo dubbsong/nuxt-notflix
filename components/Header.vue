@@ -40,17 +40,14 @@
     <!-- Right -->
     <ul class="right">
       <li>
-        <p>Is Auth: {{ isAuthenticated }}</p>
+        <a @click="toggleAsideRight">
+          <b-icon icon="bell" />
+        </a>
       </li>
       <li>
         <nuxt-link to="/login">
           <b-icon icon="login-variant" />
         </nuxt-link>
-      </li>
-      <li>
-        <a @click="toggleAsideRight">
-          <b-icon icon="bell" />
-        </a>
       </li>
     </ul>
   </header>
@@ -58,11 +55,6 @@
 
 <script>
 export default {
-  computed: {
-    isAuthenticated() {
-      return this.$store.getters.isAuthenticated
-    }
-  },
   methods: {
     toggleAsideRight() {
       console.log('Toggle AsideRight')
