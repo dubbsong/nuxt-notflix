@@ -2,21 +2,50 @@
   <div id="my-list">
     <section class="section">
       <div class="container">
-        <p class="title">My List</p>
-      </div>
-    </section>
+        <!-- top -->
+        <div class="top">
+          <!-- title -->
+          <h2>My List</h2>
 
-    <section class="section">
-      <div class="container">
-        <p class="title">Data</p>
-        <p>{{ popularData }}</p>
-        <!-- <p v-if="!popularData[0].id === null">id: {{ popularData[0].id }}</p>
-        <p>title: {{ popularData[0].title }}</p>
-        <p>poster_path: {{ popularData[0].poster_path }}</p>
-        <p>backdrop_path: {{ popularData[0].backdrop_path }}</p>
-        <p>vote_average: {{ popularData[0].vote_average }}</p>
-        <p>overview: {{ popularData[0].overview }}</p>
-        <p>release_date: {{ popularData[0].release_date }}</p> -->
+          <!-- collapse btn -->
+          <b-collapse :open="false" style="margin-bottom:8px">
+            <button slot="trigger" class="button is-light">
+              Data
+            </button>
+
+            <div class="content">
+              <p>{{ popularData }}</p>
+            </div>
+          </b-collapse>
+        </div>
+
+        <!-- middle -->
+        <div class="middle">
+          <b-table :data="popularData" :hoverable="true">
+            <template slot-scope="props">
+              <b-table-column label="Poster" width="300">
+                {{ props.row.poster_path }}
+              </b-table-column>
+              <b-table-column label="Title" width="200">
+                {{ props.row.title }}
+              </b-table-column>
+              <b-table-column label="Rate" width="80">
+                {{ props.row.vote_average }}
+              </b-table-column>
+              <b-table-column label="Release" width="200">
+                {{ props.row.release_date }}
+              </b-table-column>
+              <b-table-column label="Overview" width="500">
+                {{ props.row.overview | truncate(80) }}
+              </b-table-column>
+            </template>
+          </b-table>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom">
+          pagination
+        </div>
       </div>
     </section>
   </div>
@@ -26,6 +55,11 @@
 import axios from 'axios'
 
 export default {
+  filters: {
+    truncate(value, length) {
+      return value.length > length ? value.substr(0, length) + '...' : value
+    }
+  },
   data: () => ({
     popularData: []
   }),
