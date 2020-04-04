@@ -56,6 +56,8 @@ footer {
   /* Left */
   .left {
     p {
+      font-weight: bold;
+
       a {
         color: #fff;
       }

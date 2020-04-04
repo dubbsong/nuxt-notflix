@@ -7,8 +7,15 @@
             <!-- top -->
             <div class="top">
               <h2>LOGIN</h2>
-              <p>ID:</p>
-              <p>PW:</p>
+              <hr />
+            </div>
+
+            <!-- info -->
+            <div class="info">
+              <p>Please enter ID and PW</p>
+              <p>ID: <b>user1</b></p>
+              <p>PW: <b>User12#</b></p>
+              <p>Auth: <b></b></p>
               <hr />
             </div>
 
@@ -34,7 +41,10 @@
             </div>
 
             <!-- bottom -->
-            <b-button type="is-light" expanded>LOGIN</b-button>
+            <div class="bottom">
+              <b-button class="btn-cancel" expanded>Cancel</b-button>
+              <b-button class="btn-login" expanded>Login</b-button>
+            </div>
           </div>
         </div>
       </div>
@@ -63,9 +73,8 @@ export default {
 
       .card {
         // background-color: rgba(0, 0, 0, 0.75);
-        background-color: #20a19c;
+        background-color: #fff;
         width: 440px;
-
         border-radius: 4px;
         box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.04);
 
@@ -75,7 +84,7 @@ export default {
           /* top */
           .top {
             h2 {
-              color: #fff;
+              color: #141414;
               margin-bottom: 8px;
             }
 
@@ -88,6 +97,11 @@ export default {
             }
           }
 
+          /* info */
+          .info {
+            text-align: left;
+          }
+
           /* middle */
           .middle {
             margin-bottom: 40px;
@@ -98,6 +112,23 @@ export default {
           }
 
           /* bottom */
+          .bottom {
+            display: flex;
+
+            .btn-cancel {
+              background-color: #fff;
+              color: #141414;
+              border: solid 1px #141414;
+            }
+
+            .btn-login {
+              background-color: #141414;
+              color: #fff;
+              font-weight: bold;
+              margin-left: 8px;
+              border: solid 1px #141414;
+            }
+          }
         }
       }
     }
