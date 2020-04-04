@@ -1,7 +1,7 @@
 <template>
   <header>
-    <!-- Left -->
-    <ul class="left">
+    <!-- Left (for Desktop) -->
+    <ul class="left is-hidden-mobile">
       <li>
         <nuxt-link to="/">
           <img src="~/assets/img/logo.png" alt="logo" width="100" />
@@ -33,6 +33,15 @@
         <nuxt-link to="/test">
           <!-- <b-icon icon="flask-outline" size="is-small" /> -->
           {{ $t('COMMON.TEST') }}
+        </nuxt-link>
+      </li>
+    </ul>
+
+    <!-- Left (for Mobile) -->
+    <ul class="left is-hidden-desktop">
+      <li>
+        <nuxt-link to="/">
+          <img src="~/assets/img/logo.png" alt="logo" width="100" />
         </nuxt-link>
       </li>
     </ul>
@@ -162,6 +171,7 @@ header {
           span {
             display: flex;
             align-items: center;
+            font-family: 'Ubuntu', sans-serif;
           }
         }
 
@@ -172,6 +182,10 @@ header {
           .dropdown-content {
             a {
               color: #141414;
+
+              p {
+                font-weight: normal;
+              }
             }
           }
         }
