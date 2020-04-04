@@ -7,7 +7,8 @@
     "TEST": "테스트"
   },
   "HOME": {
-    "TRENDING_NOW": "지금 뜨는 컨텐츠"
+    "TRENDING_NOW_MOVIES": "지금 뜨는 영화",
+    "TRENDING_NOW_TV": "지금 뜨는 TV 프로그램"
   },
   "MOVIES": {
     "POPULAR": "현재 인기 있는 영화",

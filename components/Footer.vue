@@ -8,9 +8,9 @@
     </div>
 
     <!-- Center -->
-    <div class="center">
+    <!-- <div class="center">
       <p>Is Auth: {{ isAuthenticated }}</p>
-    </div>
+    </div> -->
 
     <!-- Right -->
     <ul class="right">

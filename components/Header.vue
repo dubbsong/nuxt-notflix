@@ -58,6 +58,11 @@
         </b-dropdown>
       </li>
       <li>
+        <a @click="handleSearch">
+          <b-icon icon="magnify" />
+        </a>
+      </li>
+      <li>
         <a @click="toggleAsideRight">
           <b-icon icon="bell" />
         </a>
@@ -85,6 +90,9 @@ export default {
       })
 
       window.location.reload(true)
+    },
+    handleSearch() {
+      console.log('Search Movie or TV Show')
     },
     toggleAsideRight() {
       console.log('Toggle AsideRight')
