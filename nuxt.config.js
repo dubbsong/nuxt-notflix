@@ -32,10 +32,13 @@ export default {
    ** Global CSS
    */
   css: ['~/assets/scss/index.scss'],
+  router: {
+    middleware: 'i18n'
+  },
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/i18n.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -50,7 +53,8 @@ export default {
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'cookie-universal-nuxt'
   ],
   /*
    ** Axios module configuration

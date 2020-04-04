@@ -4,7 +4,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">My List</p>
+        <p class="subtitle">
+          {{ $t('COMMON.MY_LIST') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">

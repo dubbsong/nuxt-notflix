@@ -9,13 +9,13 @@
       </li>
       <li>
         <nuxt-link to="/">
-          Home
+          {{ $t('HEADER.HOME') }}
         </nuxt-link>
       </li>
       <li>
         <nuxt-link to="/movies">
           <!-- <b-icon icon="movie" size="is-small" /> -->
-          Movies
+          {{ $t('HEADER.MOVIES') }}
         </nuxt-link>
       </li>
       <li>
@@ -40,6 +40,24 @@
     <!-- Right -->
     <ul class="right">
       <li>
+        <b-dropdown>
+          <b-button slot="trigger" type="is-dark">
+            <b-icon icon="earth"></b-icon>
+            <template>
+              <span>{{ currentLocale }}</span>
+            </template>
+            <b-icon icon="menu-down"></b-icon>
+          </b-button>
+
+          <b-dropdown-item @click="switchLanguage('en')">
+            <p>en</p>
+          </b-dropdown-item>
+          <b-dropdown-item @click="switchLanguage('ko')">
+            <p>ko</p>
+          </b-dropdown-item>
+        </b-dropdown>
+      </li>
+      <li>
         <a @click="toggleAsideRight">
           <b-icon icon="bell" />
         </a>
@@ -55,7 +73,19 @@
 
 <script>
 export default {
+  computed: {
+    currentLocale() {
+      return this.$cookies.get('locale')
+    }
+  },
   methods: {
+    switchLanguage(locale) {
+      this.$cookies.set('locale', locale, {
+        path: '/'
+      })
+
+      window.location.reload(true)
+    },
     toggleAsideRight() {
       console.log('Toggle AsideRight')
     }
@@ -63,7 +93,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 header {
   background-color: #141414;
   color: #fff;
@@ -118,6 +148,20 @@ header {
       display: flex;
       align-items: center;
       margin-left: 16px;
+
+      .dropdown {
+        button {
+          span {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .dropdown-menu {
+          min-width: 4rem;
+          width: 4rem;
+        }
+      }
 
       a {
         font-size: 14px;

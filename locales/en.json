@@ -1,0 +1,12 @@
+{
+  "COMMON": {
+    "MY_LIST": "My List",
+    "TEST": "Test"
+  },
+  "HEADER": {
+    "HOME": "Home",
+    "MOVIES": "Movies",
+    "TV": "TV Shows",
+    "MY_LIST": "My List"
+  }
+}
