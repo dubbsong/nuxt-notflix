@@ -40,6 +40,9 @@
     <!-- Left (for Mobile) -->
     <ul class="left is-hidden-desktop">
       <li>
+        <b-icon icon="menu" />
+      </li>
+      <li>
         <nuxt-link to="/">
           <img src="~/assets/img/logo.png" alt="logo" width="100" />
         </nuxt-link>
@@ -197,6 +200,19 @@ header {
         color: #e5e5e5;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    /* Left */
+    .left {
+      li {
+        margin-right: 8px;
+      }
+    }
+
+    /* Right */
   }
 }
 </style>
