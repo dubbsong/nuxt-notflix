@@ -5,7 +5,7 @@
         <!-- top -->
         <div class="top">
           <!-- title -->
-          <h2>My List</h2>
+          <h4>{{ $t('COMMON.MY_LIST') }}</h4>
 
           <!-- collapse btn -->
           <b-collapse :open="false" style="margin-bottom:8px">

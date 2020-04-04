@@ -9,30 +9,30 @@
       </li>
       <li>
         <nuxt-link to="/">
-          {{ $t('HEADER.HOME') }}
+          {{ $t('COMMON.HOME') }}
         </nuxt-link>
       </li>
       <li>
         <nuxt-link to="/movies">
           <!-- <b-icon icon="movie" size="is-small" /> -->
-          {{ $t('HEADER.MOVIES') }}
+          {{ $t('COMMON.MOVIES') }}
         </nuxt-link>
       </li>
       <li>
         <nuxt-link to="/tv">
           <!-- <b-icon icon="movie-roll" size="is-small" /> -->
-          TV Shows
+          {{ $t('COMMON.TV') }}
         </nuxt-link>
       </li>
       <li>
         <nuxt-link to="/my-list">
-          My List
+          {{ $t('COMMON.MY_LIST') }}
         </nuxt-link>
       </li>
       <li>
         <nuxt-link to="/test">
           <!-- <b-icon icon="flask-outline" size="is-small" /> -->
-          Test
+          {{ $t('COMMON.TEST') }}
         </nuxt-link>
       </li>
     </ul>
@@ -41,7 +41,7 @@
     <ul class="right">
       <li>
         <b-dropdown>
-          <b-button slot="trigger" type="is-dark">
+          <b-button slot="trigger" type="is-light">
             <b-icon icon="earth"></b-icon>
             <template>
               <span>{{ currentLocale }}</span>
@@ -158,8 +158,14 @@ header {
         }
 
         .dropdown-menu {
-          min-width: 4rem;
-          width: 4rem;
+          min-width: 5rem;
+          width: 5rem;
+
+          .dropdown-content {
+            a {
+              color: #141414;
+            }
+          }
         }
       }
 

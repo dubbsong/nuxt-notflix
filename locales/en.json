@@ -1,12 +1,22 @@
 {
   "COMMON": {
-    "MY_LIST": "My List",
-    "TEST": "Test"
-  },
-  "HEADER": {
     "HOME": "Home",
     "MOVIES": "Movies",
     "TV": "TV Shows",
-    "MY_LIST": "My List"
+    "MY_LIST": "My List",
+    "TEST": "Test"
+  },
+  "HOME": {
+    "TRENDING_NOW": "Trending Now"
+  },
+  "MOVIES": {
+    "POPULAR": "Popular",
+    "NOW_PLAYING": "Now Playing",
+    "TOP_RATED": "Top Rated"
+  },
+  "TV": {
+    "POPULAR": "Popular",
+    "ON_THE_AIR": "On The Air",
+    "TOP_RATED": "Top Rated"
   }
 }

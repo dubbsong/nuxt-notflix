@@ -4,7 +4,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">Popular</p>
+        <p class="subtitle">
+          {{ $t('TV.POPULAR') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -23,7 +25,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">On The Air</p>
+        <p class="subtitle">
+          {{ $t('TV.ON_THE_AIR') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -42,7 +46,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">Top Rated</p>
+        <p class="subtitle">
+          {{ $t('TV.TOP_RATED') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">

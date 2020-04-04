@@ -4,7 +4,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">Popular</p>
+        <p class="subtitle">
+          {{ $t('MOVIES.POPULAR') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -23,7 +25,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">Now Playing</p>
+        <p class="subtitle">
+          {{ $t('MOVIES.NOW_PLAYING') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -42,7 +46,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">Top Rated</p>
+        <p class="subtitle">
+          {{ $t('MOVIES.TOP_RATED') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">

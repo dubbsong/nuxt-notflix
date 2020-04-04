@@ -25,7 +25,9 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">Trending Now</p>
+        <p class="subtitle">
+          {{ $t('HOME.TRENDING_NOW') }}
+        </p>
 
         <!-- collapse btn -->
         <b-collapse :open="false">

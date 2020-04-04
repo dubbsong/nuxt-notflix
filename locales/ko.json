@@ -1,12 +1,22 @@
 {
   "COMMON": {
-    "MY_LIST": "내가 찜한 컨텐츠",
-    "TEST": "테스트"
-  },
-  "HEADER": {
     "HOME": "홈",
     "MOVIES": "영화",
     "TV": "TV 프로그램",
-    "MY_LIST": "내가 찜한 컨텐츠"
+    "MY_LIST": "내가 찜한 컨텐츠",
+    "TEST": "테스트"
+  },
+  "HOME": {
+    "TRENDING_NOW": "지금 뜨는 컨텐츠"
+  },
+  "MOVIES": {
+    "POPULAR": "현재 인기 있는 영화",
+    "NOW_PLAYING": "현재 상영 중인 영화",
+    "TOP_RATED": "가장 인기 있는 영화"
+  },
+  "TV": {
+    "POPULAR": "현재 인기 있는 TV 프로그램",
+    "ON_THE_AIR": "현재 방영 중인 TV 프로그램",
+    "TOP_RATED": "가장 인기 있는 TV 프로그램"
   }
 }
