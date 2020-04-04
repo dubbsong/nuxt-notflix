@@ -48,15 +48,15 @@
 
     <!-- Right -->
     <ul class="right">
-      <li>
+      <li class="is-hidden-mobile">
         <b-dropdown>
-          <b-button slot="trigger" type="is-light">
+          <button slot="trigger" class="button is-light">
             <b-icon icon="earth"></b-icon>
             <template>
               <span>{{ currentLocale }}</span>
             </template>
             <b-icon icon="menu-down"></b-icon>
-          </b-button>
+          </button>
 
           <b-dropdown-item @click="switchLanguage('en')">
             <p>en</p>
