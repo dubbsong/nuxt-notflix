@@ -6,6 +6,10 @@
     "MY_LIST": "내가 찜한 컨텐츠",
     "TEST": "테스트"
   },
+  "BUTTON": {
+    "CANCEL": "취소",
+    "CONFIRM": "확인"
+  },
   "HOME": {
     "TRENDING_NOW_MOVIES": "지금 뜨는 영화",
     "TRENDING_NOW_TV": "지금 뜨는 TV 프로그램"
@@ -19,5 +23,13 @@
     "POPULAR": "현재 인기 있는 TV 프로그램",
     "ON_THE_AIR": "현재 방영 중인 TV 프로그램",
     "TOP_RATED": "가장 인기 있는 TV 프로그램"
+  },
+  "LOGIN": {
+    "TITLE": "로그인",
+    "LABEL_ID": "ID",
+    "PLACEHOLDER_ENTER_ID": "ID를 입력해주세요.",
+    "LABEL_PASSWORD": "비밀번호",
+    "PLACEHOLDER_ENTER_PASSWORD": "비밀번호를 입력해주세요.",
+    "BUTTON_LOGIN": "로그인"
   }
 }

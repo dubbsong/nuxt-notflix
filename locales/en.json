@@ -6,6 +6,10 @@
     "MY_LIST": "My List",
     "TEST": "Test"
   },
+  "BUTTON": {
+    "CANCEL": "Cancel",
+    "CONFIRM": "Confirm"
+  },
   "HOME": {
     "TRENDING_NOW_MOVIES": "Trending Now Movies",
     "TRENDING_NOW_TV": "Trending Now TV Shows"
@@ -19,5 +23,13 @@
     "POPULAR": "Popular",
     "ON_THE_AIR": "On The Air",
     "TOP_RATED": "Top Rated"
+  },
+  "LOGIN": {
+    "TITLE": "LOGIN",
+    "LABEL_ID": "ID",
+    "PLACEHOLDER_ENTER_ID": "Please enter your ID",
+    "LABEL_PASSWORD": "Password",
+    "PLACEHOLDER_ENTER_PASSWORD": "Please enter your password",
+    "BUTTON_LOGIN": "Login"
   }
 }

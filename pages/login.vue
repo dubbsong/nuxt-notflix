@@ -6,15 +6,15 @@
           <div class="card-content">
             <!-- top -->
             <div class="top">
-              <h2>LOGIN</h2>
+              <h2>{{ $t('LOGIN.TITLE') }}</h2>
               <hr />
             </div>
 
             <!-- info -->
             <div class="info">
               <p>Please enter ID and PW</p>
-              <p>ID: <b>user1</b></p>
-              <p>PW: <b>User12#</b></p>
+              <p>ID: <b>ironman</b></p>
+              <p>PW: <b>Admin12#</b></p>
               <p>Auth: <b></b></p>
               <hr />
             </div>
@@ -22,28 +22,38 @@
             <!-- middle -->
             <div class="middle">
               <!-- ID -->
-              <b-field label="ID" :label-position="labelPosition">
+              <b-field
+                :label="$t('LOGIN.LABEL_ID')"
+                :label-position="labelPosition"
+              >
                 <b-input
                   v-model="userId"
                   type="text"
-                  placeholder="Please enter your ID"
+                  :placeholder="$t('LOGIN.PLACEHOLDER_ENTER_ID')"
                 ></b-input>
               </b-field>
 
               <!-- Password -->
-              <b-field label="Password" :label-position="labelPosition">
+              <b-field
+                :label="$t('LOGIN.LABEL_PASSWORD')"
+                :label-position="labelPosition"
+              >
                 <b-input
                   v-model="userPassword"
                   type="password"
-                  placeholder="Please enter your Password"
+                  :placeholder="$t('LOGIN.PLACEHOLDER_ENTER_PASSWORD')"
                 ></b-input>
               </b-field>
             </div>
 
             <!-- bottom -->
             <div class="bottom">
-              <b-button class="btn-cancel" expanded>Cancel</b-button>
-              <b-button class="btn-login" expanded>Login</b-button>
+              <b-button class="btn-cancel" expanded>
+                {{ $t('BUTTON.CANCEL') }}
+              </b-button>
+              <b-button class="btn-login" expanded>
+                {{ $t('LOGIN.BUTTON_LOGIN') }}
+              </b-button>
             </div>
           </div>
         </div>
@@ -64,12 +74,17 @@ export default {
 
 <style lang="scss" scoped>
 #login {
+  height: calc(100vh - 108px);
+
   section {
+    height: 100%;
+
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 65vh;
+      height: 100%;
+      // min-height: 65vh;
 
       .card {
         // background-color: rgba(0, 0, 0, 0.75);
@@ -90,10 +105,6 @@ export default {
 
             p {
               color: #e5e5e5;
-            }
-
-            hr {
-              height: 1px;
             }
           }
 
@@ -118,6 +129,7 @@ export default {
             .btn-cancel {
               background-color: #fff;
               color: #141414;
+              font-weight: bold;
               border: solid 1px #141414;
             }
 
