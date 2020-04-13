@@ -7,7 +7,6 @@
             <!-- top -->
             <div class="top">
               <h2>{{ $t('LOGIN.TITLE') }}</h2>
-              <hr />
             </div>
 
             <!-- info -->
@@ -55,10 +54,10 @@
 
             <!-- bottom -->
             <div class="bottom">
-              <b-button class="btn-cancel" expanded>
+              <!-- <b-button class="btn-cancel" expanded>
                 {{ $t('BUTTON.CANCEL') }}
-              </b-button>
-              <b-button class="btn-login" expanded>
+              </b-button> -->
+              <b-button class="btn-login" expanded @click="handleLogin">
                 {{ $t('LOGIN.BUTTON_LOGIN') }}
               </b-button>
             </div>
@@ -66,6 +65,36 @@
         </div>
       </div>
     </section>
+
+    <!-- alertModal -->
+    <b-modal :active.sync="alertModal" has-modal-card class="modal-alert">
+      <div class="card">
+        <div class="card-content">
+          <!-- top -->
+          <div class="top">
+            <img src="~/assets/img/logo.png" alt="logo" width="120" />
+          </div>
+
+          <!-- middle  -->
+          <div class="middle">
+            <h5>
+              {{ alertModalTitle }}
+            </h5>
+
+            <p>
+              {{ alertModalText }}
+            </p>
+          </div>
+
+          <!-- bottom -->
+          <div class="bottom">
+            <b-button expanded @click="alertModal = false">
+              {{ $t('BUTTON.CLOSE') }}
+            </b-button>
+          </div>
+        </div>
+      </div>
+    </b-modal>
   </div>
 </template>
 
@@ -74,8 +103,19 @@ export default {
   data: () => ({
     userId: '',
     userPassword: '',
-    labelPosition: 'on-border'
-  })
+    labelPosition: 'on-border',
+    alertModal: false,
+    alertModalTitle: '',
+    alertModalText: ''
+  }),
+  methods: {
+    handleLogin() {
+      if (this.userId === '') {
+        this.alertModal = true
+        this.alertModalTitle = 'Please enter your ID'
+      }
+    }
+  }
 }
 </script>
 
@@ -107,7 +147,7 @@ export default {
           .top {
             h2 {
               color: #141414;
-              margin-bottom: 8px;
+              margin-bottom: 24px;
             }
 
             p {
@@ -133,12 +173,12 @@ export default {
           .bottom {
             display: flex;
 
-            .btn-cancel {
-              background-color: #fff;
-              color: #141414;
-              font-weight: bold;
-              border: solid 1px #141414;
-            }
+            // .btn-cancel {
+            //   background-color: #fff;
+            //   color: #141414;
+            //   font-weight: bold;
+            //   border: solid 1px #141414;
+            // }
 
             .btn-login {
               background-color: #141414;
@@ -147,6 +187,43 @@ export default {
               margin-left: 8px;
               border: solid 1px #141414;
             }
+          }
+        }
+      }
+    }
+  }
+
+  /* alertModal */
+  .modal-alert {
+    .card {
+      width: 400px;
+      border-radius: 4px;
+      box-shadow: 0 1px 8px 2px rgba(0, 0, 0, 0.1);
+
+      .card-content {
+        text-align: center;
+
+        /* top */
+        .top {
+          margin: 8px 0 24px;
+        }
+
+        /* middle */
+        .middle {
+          margin-bottom: 40px;
+
+          h5 {
+            font-weight: bold;
+            color: #141414;
+          }
+        }
+
+        /* bottom */
+        .bottom {
+          button {
+            background-color: #141414;
+            color: #fff;
+            font-weight: bold;
           }
         }
       }

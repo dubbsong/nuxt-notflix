@@ -8,7 +8,8 @@
   },
   "BUTTON": {
     "CANCEL": "Cancel",
-    "CONFIRM": "Confirm"
+    "CONFIRM": "Confirm",
+    "CLOSE": "Close"
   },
   "HOME": {
     "TRENDING_NOW_MOVIES": "Trending Now Movies",

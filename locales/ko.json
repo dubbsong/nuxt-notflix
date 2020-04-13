@@ -8,7 +8,8 @@
   },
   "BUTTON": {
     "CANCEL": "취소",
-    "CONFIRM": "확인"
+    "CONFIRM": "확인",
+    "CLOSE": "닫기"
   },
   "HOME": {
     "TRENDING_NOW_MOVIES": "지금 뜨는 영화",
