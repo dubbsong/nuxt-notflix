@@ -26,6 +26,9 @@
   },
   "LOGIN": {
     "TITLE": "LOGIN",
+    "NOTICE_TITLE": "Please enter below ID and PW",
+    "NOTICE_ID": "ID: ",
+    "NOTICE_PW": "Password: ",
     "LABEL_ID": "ID",
     "PLACEHOLDER_ENTER_ID": "Please enter your ID",
     "LABEL_PASSWORD": "Password",

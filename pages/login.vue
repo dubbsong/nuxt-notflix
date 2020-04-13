@@ -12,10 +12,17 @@
 
             <!-- info -->
             <div class="info">
-              <p>Please enter ID and PW</p>
-              <p>ID: <b>ironman</b></p>
-              <p>PW: <b>Admin12#</b></p>
-              <p>Auth: <b></b></p>
+              <b class="has-text-success">
+                {{ $t('LOGIN.NOTICE_TITLE') }}
+              </b>
+              <p>
+                {{ $t('LOGIN.NOTICE_ID') }}
+                <b class="has-text-success">user1</b>
+              </p>
+              <p>
+                {{ $t('LOGIN.NOTICE_PW') }}
+                <b class="has-text-success">User12#</b>
+              </p>
               <hr />
             </div>
 

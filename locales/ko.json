@@ -26,8 +26,11 @@
   },
   "LOGIN": {
     "TITLE": "로그인",
-    "LABEL_ID": "ID",
-    "PLACEHOLDER_ENTER_ID": "ID를 입력해주세요.",
+    "NOTICE_TITLE": "아래의 아이디와 비밀번호를 입력해주세요.",
+    "NOTICE_ID": "아이디: ",
+    "NOTICE_PW": "비밀번호: ",
+    "LABEL_ID": "아이디",
+    "PLACEHOLDER_ENTER_ID": "아이디를 입력해주세요.",
     "LABEL_PASSWORD": "비밀번호",
     "PLACEHOLDER_ENTER_PASSWORD": "비밀번호를 입력해주세요.",
     "BUTTON_LOGIN": "로그인"
