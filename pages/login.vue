@@ -36,6 +36,7 @@
                   v-model="userId"
                   type="text"
                   :placeholder="$t('LOGIN.PLACEHOLDER_ENTER_ID')"
+                  @keyup.native.enter="handleLogin"
                 ></b-input>
               </b-field>
 
@@ -48,6 +49,7 @@
                   v-model="userPassword"
                   type="password"
                   :placeholder="$t('LOGIN.PLACEHOLDER_ENTER_PASSWORD')"
+                  @keyup.native.enter="handleLogin"
                 ></b-input>
               </b-field>
             </div>
@@ -113,7 +115,22 @@ export default {
       if (this.userId === '') {
         this.alertModal = true
         this.alertModalTitle = 'Please enter your ID'
+        return
       }
+
+      if (this.userPassword === '') {
+        this.alertModal = true
+        this.alertModalTitle = 'Please enter your Password'
+        return
+      }
+
+      if (this.userId !== 'user1' || this.userPassword !== 'User12#') {
+        this.alertModal = true
+        this.alertModalTitle = 'Incorrect your ID or Password'
+        return
+      }
+
+      alert('SUCCESS')
     }
   }
 }
@@ -226,6 +243,21 @@ export default {
             font-weight: bold;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #login {
+    // padding-bottom: 72px;
+
+    /* alertModal */
+    .modal-alert {
+      padding: 0 8px;
+
+      .card {
+        width: 100%;
       }
     }
   }
