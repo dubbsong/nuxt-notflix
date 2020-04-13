@@ -32,8 +32,11 @@
     "NOTICE_PW": "비밀번호: ",
     "LABEL_ID": "아이디",
     "PLACEHOLDER_ENTER_ID": "아이디를 입력해주세요.",
+    "ALERT_ENTER_ID": "아이디를 입력해주세요.",
     "LABEL_PASSWORD": "비밀번호",
     "PLACEHOLDER_ENTER_PASSWORD": "비밀번호를 입력해주세요.",
-    "BUTTON_LOGIN": "로그인"
+    "ALERT_ENTER_PASSWORD": "비밀번호를 입력해주세요.",
+    "BUTTON_LOGIN": "로그인",
+    "ALERT_INCORRECT_ID_OR_PASSWORD": "아이디 또는 비밀번호가 올바르지 않습니다."
   }
 }

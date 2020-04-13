@@ -32,8 +32,11 @@
     "NOTICE_PW": "Password: ",
     "LABEL_ID": "ID",
     "PLACEHOLDER_ENTER_ID": "Please enter your ID",
+    "ALERT_ENTER_ID": "Please enter your ID",
     "LABEL_PASSWORD": "Password",
     "PLACEHOLDER_ENTER_PASSWORD": "Please enter your password",
-    "BUTTON_LOGIN": "Login"
+    "ALERT_ENTER_PASSWORD": "Please enter your password",
+    "BUTTON_LOGIN": "Login",
+    "ALERT_INCORRECT_ID_OR_PASSWORD": "Incorrect your ID or password"
   }
 }

@@ -114,19 +114,19 @@ export default {
     handleLogin() {
       if (this.userId === '') {
         this.alertModal = true
-        this.alertModalTitle = 'Please enter your ID'
+        this.alertModalTitle = this.$t('LOGIN.ALERT_ENTER_ID')
         return
       }
 
       if (this.userPassword === '') {
         this.alertModal = true
-        this.alertModalTitle = 'Please enter your Password'
+        this.alertModalTitle = this.$t('LOGIN.ALERT_ENTER_PASSWORD')
         return
       }
 
       if (this.userId !== 'user1' || this.userPassword !== 'User12#') {
         this.alertModal = true
-        this.alertModalTitle = 'Incorrect your ID or Password'
+        this.alertModalTitle = this.$t('LOGIN.ALERT_INCORRECT_ID_OR_PASSWORD')
         return
       }
 
