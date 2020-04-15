@@ -37,6 +37,7 @@
     "PLACEHOLDER_ENTER_PASSWORD": "비밀번호를 입력해주세요.",
     "ALERT_ENTER_PASSWORD": "비밀번호를 입력해주세요.",
     "BUTTON_LOGIN": "로그인",
-    "ALERT_INCORRECT_ID_OR_PASSWORD": "아이디 또는 비밀번호가 올바르지 않습니다."
+    "ALERT_INCORRECT_ID_OR_PASSWORD": "아이디 또는 비밀번호가 올바르지 않습니다.",
+    "ALERT_LOGGED_IN": "로그인 되었습니다."
   }
 }

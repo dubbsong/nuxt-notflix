@@ -130,7 +130,13 @@ export default {
         return
       }
 
-      alert('SUCCESS')
+      this.$store.dispatch('login', 'itsadummyjwttoken')
+      this.$router.push('/my-list')
+      this.$buefy.snackbar.open({
+        message: this.$t('LOGIN.ALERT_LOGGED_IN'),
+        type: 'is-white',
+        queue: false
+      })
     }
   }
 }

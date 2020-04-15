@@ -37,6 +37,7 @@
     "PLACEHOLDER_ENTER_PASSWORD": "Please enter your password",
     "ALERT_ENTER_PASSWORD": "Please enter your password",
     "BUTTON_LOGIN": "Login",
-    "ALERT_INCORRECT_ID_OR_PASSWORD": "Incorrect your ID or password"
+    "ALERT_INCORRECT_ID_OR_PASSWORD": "Incorrect your ID or password",
+    "ALERT_LOGGED_IN": "Logged in"
   }
 }
