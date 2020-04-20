@@ -3,9 +3,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="title">
-          {{ $t('COMMON.TEST') }}
-        </p>
+        <h4>Popular Movies</h4>
 
         <!-- slider -->
         <div class="slider">
@@ -108,7 +106,6 @@ export default {
           &:hover {
             transform: scale(1.1);
             margin: 0 16px;
-            opacity: 0.4;
           }
 
           /* bg img */
@@ -124,7 +121,6 @@ export default {
             justify-content: space-between;
             align-items: flex-end;
             height: 100%;
-            // height: 135px;
 
             /* left */
 
