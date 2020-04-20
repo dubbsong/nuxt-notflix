@@ -54,6 +54,7 @@ import axios from 'axios'
 
 export default {
   data: () => ({
+    loading: false,
     popularData: []
   }),
   mounted() {
@@ -66,12 +67,16 @@ export default {
         'language=en-US'
       ].join('&')
 
+      this.loading = true
+
       axios
         .get(`https://api.themoviedb.org/3/movie/popular?${params}`)
         .then(({ data }) => {
+          this.loading = false
           this.popularData = data.results
         })
         .catch((error) => {
+          this.loading = false
           this.popularData = []
           throw error
         })
