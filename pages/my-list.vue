@@ -86,3 +86,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#my-list {
+  height: calc(100vh - 108px);
+}
+</style>

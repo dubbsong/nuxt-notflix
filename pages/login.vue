@@ -154,7 +154,6 @@ export default {
       justify-content: center;
       align-items: center;
       height: 100%;
-      // min-height: 65vh;
 
       .card {
         // background-color: rgba(0, 0, 0, 0.75);

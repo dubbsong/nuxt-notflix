@@ -134,3 +134,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#tv {
+  height: calc(100vh - 108px);
+}
+</style>

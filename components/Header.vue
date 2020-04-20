@@ -1,7 +1,7 @@
 <template>
   <header>
     <!-- Left (for Desktop) -->
-    <ul class="left is-hidden-mobile">
+    <ul class="left is-hidden-touch">
       <li>
         <nuxt-link to="/">
           <img src="~/assets/img/logo.png" alt="logo" width="100" />
