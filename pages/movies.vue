@@ -4,9 +4,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('MOVIES.POPULAR') }}
-        </p>
+        <h4>{{ $t('MOVIES.POPULAR') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -25,9 +23,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('MOVIES.NOW_PLAYING') }}
-        </p>
+        <h4>{{ $t('MOVIES.NOW_PLAYING') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -46,9 +42,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('MOVIES.TOP_RATED') }}
-        </p>
+        <h4>{{ $t('MOVIES.TOP_RATED') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -138,5 +132,13 @@ export default {
 <style lang="scss" scoped>
 #movies {
   height: calc(100vh - 108px);
+
+  section {
+    .container {
+      h4 {
+        margin-bottom: 8px;
+      }
+    }
+  }
 }
 </style>

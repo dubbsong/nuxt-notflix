@@ -4,9 +4,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('TV.POPULAR') }}
-        </p>
+        <h4>{{ $t('TV.POPULAR') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -25,9 +23,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('TV.ON_THE_AIR') }}
-        </p>
+        <h4>{{ $t('TV.ON_THE_AIR') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -46,9 +42,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('TV.TOP_RATED') }}
-        </p>
+        <h4>{{ $t('TV.TOP_RATED') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -138,5 +132,13 @@ export default {
 <style lang="scss" scoped>
 #tv {
   height: calc(100vh - 108px);
+
+  section {
+    .container {
+      h4 {
+        margin-bottom: 8px;
+      }
+    }
+  }
 }
 </style>
