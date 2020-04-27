@@ -2,9 +2,7 @@
   <div id="test">
     <section class="section">
       <div class="container">
-        <p class="title">
-          {{ $t('COMMON.TEST') }}
-        </p>
+        <h4>{{ $t('COMMON.TEST') }}</h4>
       </div>
     </section>
   </div>

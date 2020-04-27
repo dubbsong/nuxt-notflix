@@ -4,9 +4,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('COMMON.MY_LIST') }}
-        </p>
+        <h4>{{ $t('COMMON.MY_LIST') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -25,9 +23,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('HOME.TRENDING_NOW_MOVIES') }}
-        </p>
+        <h4>{{ $t('HOME.TRENDING_NOW_MOVIES') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -46,9 +42,7 @@
     <section class="section">
       <div class="container">
         <!-- title -->
-        <p class="subtitle">
-          {{ $t('HOME.TRENDING_NOW_TV') }}
-        </p>
+        <h4>{{ $t('HOME.TRENDING_NOW_TV') }}</h4>
 
         <!-- collapse btn -->
         <b-collapse :open="false">
@@ -68,5 +62,13 @@
 <style lang="scss" scoped>
 #home {
   height: calc(100vh - 108px);
+
+  section {
+    .container {
+      h4 {
+        margin-bottom: 8px;
+      }
+    }
+  }
 }
 </style>

@@ -24,7 +24,13 @@
           <b-table :data="popularData" :hoverable="true">
             <template slot-scope="props">
               <b-table-column label="Poster" width="300">
-                {{ props.row.poster_path }}
+                <!-- {{ props.row.poster_path }} -->
+                <img
+                  :src="
+                    'https://image.tmdb.org/t/p/w200' + props.row.poster_path
+                  "
+                  alt="poster"
+                />
               </b-table-column>
               <b-table-column label="Title" width="200">
                 {{ props.row.title }}
